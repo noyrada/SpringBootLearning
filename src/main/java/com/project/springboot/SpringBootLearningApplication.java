@@ -12,9 +12,11 @@ public class SpringBootLearningApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootLearningApplication.class, args);
 	}
-	@GetMapping()
+
+	@GetMapping("/greeting")
 	public String getGreeting(){
 		return "Hello World";
 	}
+
 }
 
