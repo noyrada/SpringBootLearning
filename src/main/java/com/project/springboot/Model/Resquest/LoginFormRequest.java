@@ -15,5 +15,4 @@ public class LoginFormRequest {
     public String getRole(){
         return this.role;
     }
-
 }
