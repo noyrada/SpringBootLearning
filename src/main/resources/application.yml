@@ -1,0 +1,25 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /v1
+
+spring:
+  application:
+    name: Spring Boot Learning
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/spbLearn3_db
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.PostgresSQLDialect
+      show-sql: true
+
+    open-in-view: false
